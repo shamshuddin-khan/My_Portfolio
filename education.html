@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Education Details</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            background-image: url(/assets/rainhigh.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #68b0db;
+            padding: 20px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333333;
+        }
+
+        .education-info {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .education-item {
+            background-color: #b3cfe0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 45%;
+        }
+
+        h2 {
+            color: #4CAF50;
+        }
+
+        p {
+            color: #333333;
+            margin: 10px 0;
+        }
+
+        .go-back-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .go-back-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Education Details</h1>
+        <div class="education-info">
+            <div class="education-item">
+                <h2>Visvesvaraya Technological University</h2>
+                <p>Girijabai Sail Institue of Technology</p>
+                <p>Graduation Year: 2023</p>
+            </div>
+            <div class="education-item">
+                <h2>PUC Degree</h2>
+                <p>Government Pre University collage</p>
+                <p>Graduation Year: 2019</p>
+            </div>
+        </div><br><br>
+        <center>
+            <div class="education-item">
+                <h2>High School</h2>
+                <p>Sacred Heart Convent High School</p>
+                <p>Graduation Year: 2016</p>
+            </div>
+            <button class="go-back-button" onclick="goBack()">Go Back</button>
+        </center>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>

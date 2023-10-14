@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .main {
+            padding: 2rem;
+        }
+
+
+        .project-image {
+            width: 85%;
+            max-height: 400px;
+            object-fit: fill;
+            border: 2px solid #333;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #goBackButton {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        #goBackButton:hover {
+            background-color: #333;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Project</h1>
+    </header>
+
+    <div class="container">
+        <div class="main">
+            <h2>Student Registration Portal</h2>
+            <p>The Student Registration Portal is a user-friendly web application designed to simplify 
+            the process of student registration. It provides a convenient platform for students to enter
+            their personal and educational details securely. This portal streamlines the registration
+            process for educational institutions, making it easier for them to collect and manage student information.
+            </p>
+
+            <center><img class="project-image" src="/assets/student details.png" alt="Project Image"></center>
+
+            <h2>Project Features</h2>
+            <ul>
+                <li>Clean UI</li>
+                <li>Easy to Use</li>
+                <li>Attractive Interface</li>
+            </ul>
+
+            <button id="goBackButton">Go Back</button>
+
+            <script>
+                document.getElementById("goBackButton").addEventListener("click", function() {
+                    window.history.back();
+                });
+            </script>
+        </div>
+    </div>
+
+</body>
+
+</html>

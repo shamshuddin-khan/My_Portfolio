@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-image: url(/assets/cloud.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.social-links a {
+    margin-right: 20px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.back-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><u>About Me</u></h1>
+
+        <p>Hello! My name is Shamshuddin Khan and I am passionate about developing new software.</p>
+
+        <h2><u>Connect with Me</u></h2>
+        <div class="social-links">
+            <a href="https://github.com/" target="_blank">GitHub</a>
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a>
+        </div>
+
+        <h2><u>Contact Information</u></h2>
+        <p>Email: khanshamhsuddin20@gmail.com<br>
+            Phone: +91 7204360316<br>
+            Location: Rajajinagar, Bangalore</p>
+
+        <button class="back-button" onclick="goBack()">Back</button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>

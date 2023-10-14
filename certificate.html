@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Certificates</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            background-image: url(/assets/purp.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #7d50ae;
+            padding: 20px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #000000;
+        }
+
+        .certificates {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .certificate-item {
+            margin: 10px;
+            text-align: center;
+        }
+
+        .certificate-item img {
+            width: 550px; /* Adjust */
+            height: 650px; /* Adjus*/
+            object-fit: cover;
+            border-radius: 5px;
+            object-fit: fill;
+            border: 2px solid #242424;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+        }
+
+        .go-back-button {
+            background-color: #827e87;
+            color: rgb(0, 0, 0);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .go-back-button:hover {
+            background-color: #4c4a4a;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>My Certificates</h1>
+        <div class="certificates">
+
+            <div class="certificate-item">
+                <img src="/assets/compint.jpg" alt="Certificate 1">
+                <p><strong>Certificate 1</strong></p>
+            </div>
+
+                
+            <div class="certificate-item">
+                <img src="assets/prodegcer.jpg" alt="Certificate 2">
+                <p><strong>Certificate 2</strong></p>
+            </div>
+
+
+        </div>
+        <center><button class="go-back-button" onclick="goBack()">Go Back</button></center>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>
